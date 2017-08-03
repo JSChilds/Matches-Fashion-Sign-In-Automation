@@ -1,5 +1,7 @@
-require_relative 'matches_homepage.rb'
-require_relative 'matches_login.rb'
+require 'watir'
+require_relative '../matches.rb'
+
+
 RSpec.configure do |config|
   config.formatter = :documentation
 end

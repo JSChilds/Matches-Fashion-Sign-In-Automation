@@ -1,7 +1,7 @@
-require'spec-helper'
+require'spec_helper'
 
 
-Describe Matches do
+describe Matches do
 	
 	before(:all) do 
 		@matches = Matches.new

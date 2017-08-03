@@ -17,11 +17,9 @@ class MatchesHomepage
 		@browser.element(id: 'loginLinks')		
 	end
 
+	def user_account_data
+		@bowser.element(href: 'login')
+	end
+
 
 end
-
-
-homepage = MatchesHomepage.new
-
-homepage.go_to_homepage
-homepage.sign_in_button.click
