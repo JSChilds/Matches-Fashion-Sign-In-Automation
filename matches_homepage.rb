@@ -14,7 +14,7 @@ class MatchesHomepage
 	end
 
 	def sign_in_button
-		@browser.element(id: 'LoginLinks')		
+		@browser.element(id: 'loginLinks')		
 	end
 
 
