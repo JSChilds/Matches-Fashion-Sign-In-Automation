@@ -8,6 +8,11 @@ describe Matches do
 	end 
 
 	it "Should go to the homepage" do
-		expect(@matches.find_browser).to eq 'http://www.matchesfashion.com'
+		@matches.homepage.go_to_homepage
+		expect(@matches.homepage.find_url).to eq 'http://matchesfashion.com'
+	end
+
+	it "Should have a login button" do
+		expect(@matches.sign_in_button.exists?).to eq true
 	end
 end
